@@ -4,7 +4,7 @@
 FROM maven:3.8.1-openjdk-11-slim AS build
 WORKDIR /home/ec2-user/user
 COPY ./ ./
-RUN RUN mvn package -Dmaven.test.skip=true
+RUN mvn package -Dmaven.test.skip=true
 
 #
 # Package stage
